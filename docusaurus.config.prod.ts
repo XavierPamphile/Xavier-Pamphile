@@ -56,7 +56,101 @@ const config: Config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    // Add other theme configurations
+    navbar: {
+      title: 'Xavier Pamphile',
+      hideOnScroll: false,
+      style: 'primary',
+      items: [
+        // Left side
+        {
+          to: '/',
+          label: 'Home',
+          position: 'left',
+          activeBaseRegex: '^/$',
+        },
+        {
+          to: '/experience',
+          label: 'Experience',
+          position: 'left',
+        },
+        {
+          to: '/contact',
+          label: 'Contact',
+          position: 'left',
+        },
+        // Right side
+        {
+          to: '/blog',
+          label: 'Blog',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/XavierPamphile',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub profile',
+        },
+        {
+          href: 'https://linkedin.com/in/xavier-pamphile',
+          position: 'right',
+          className: 'header-linkedin-link',
+          'aria-label': 'LinkedIn profile',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Content',
+          items: [
+            {
+              label: 'Home',
+              to: '/',
+            },
+            {
+              label: 'Experience',
+              to: '/experience',
+            },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+          ],
+        },
+        {
+          title: 'Connect',
+          items: [
+            {
+              label: 'Contact',
+              to: '/contact',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/XavierPamphile',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/xavier-pamphile',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'RSS',
+              to: '/blog/rss.xml',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright ${new Date().getFullYear()} Xavier Pamphile. Built with Docusaurus.`,
+    },
   } satisfies Preset.ThemeConfig,
 };
 
