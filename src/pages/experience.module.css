@@ -1,0 +1,63 @@
+.experienceTimeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.experienceTimeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: var(--ifm-color-primary);
+}
+
+.experienceItem {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 3rem;
+}
+
+.experienceItem::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-background-color);
+}
+
+.experienceMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.period {
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experienceTimeline::before {
+    left: 12px;
+  }
+  
+  .experienceItem {
+    padding-left: 2rem;
+  }
+  
+  .experienceMeta {
+    flex-direction: column;
+  }
+}

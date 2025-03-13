@@ -20,4 +20,69 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.profileSection, 
+.skillsSection {
+  padding: 2rem;
+  height: 100%;
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  background-color: var(--ifm-background-surface-color);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skillCategory h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.skillsList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.skillsList li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.skillsList li:last-child {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+  }
 }
