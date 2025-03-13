@@ -1,19 +1,34 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+webdev:
+  label: Web Development
+  permalink: /tags/webdev
+  description: Articles about web development technologies, best practices, and trends.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+javascript:
+  label: JavaScript
+  permalink: /tags/javascript
+  description: Exploring JavaScript language features, frameworks, and libraries.
+
+react:
+  label: React
+  permalink: /tags/react
+  description: Topics related to React.js development, components, and patterns.
+
+career:
+  label: Career
+  permalink: /tags/career
+  description: Professional development, career advice, and industry insights.
+
+typescript:
+  label: TypeScript
+  permalink: /tags/typescript
+  description: TypeScript tips, tricks, and implementation strategies.
 
 docusaurus:
   label: Docusaurus
   permalink: /docusaurus
-  description: Docusaurus tag description
+  description: Articles about Docusaurus features and customization.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+tutorial:
+  label: Tutorials
+  permalink: /tags/tutorial
+  description: Step-by-step guides and educational content.

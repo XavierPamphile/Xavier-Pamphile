@@ -1,3 +1,13 @@
+xavier:
+  name: Xavier Pamphile
+  title: Software Developer & Technology Enthusiast
+  url: https://github.com/XavierPamphile
+  image_url: https://github.com/XavierPamphile.png
+  page: true
+  socials:
+    linkedin: xavier-pamphile
+    github: XavierPamphile
+
 yangshun:
   name: Yangshun Tay
   title: Front End Engineer @ Facebook
