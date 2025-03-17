@@ -5,20 +5,20 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Xavier Pamphile',
+  tagline: 'Développeur Web & Passionné de Technologie',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://xavierpamphile.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'XavierPamphile', // Usually your GitHub org/user name.
+  projectName: 'personal-website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -27,8 +27,15 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
+    localeConfigs: {
+      fr: {
+        htmlLang: 'fr-FR',
+        label: 'Français',
+        direction: 'ltr',
+      },
+    },
   },
 
   // Add structured data for better SEO
@@ -42,11 +49,8 @@ const config: Config = {
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: 'Xavier Pamphile',
-        url: 'https://your-docusaurus-site.example.com',
-        sameAs: [
-          'https://github.com/your-github-username',
-          'https://linkedin.com/in/your-linkedin-username',
-        ],
+        url: 'https://xavierpamphile.com',
+        sameAs: ['https://github.com/XavierPamphile', 'https://linkedin.com/in/xavier-pamphile'],
         jobTitle: 'Developer',
         worksFor: {
           '@type': 'Organization',
@@ -65,7 +69,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/XavierPamphile/personal-website/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -76,7 +80,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/XavierPamphile/personal-website/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -121,43 +125,64 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     metadata: [
-      { name: 'keywords', content: 'portfolio, developer, personal website, blog' },
+      { name: 'keywords', content: 'portfolio, développeur, site personnel, blog' },
       {
         name: 'description',
-        content: 'Personal website and portfolio showcasing projects, experiences, and blog posts',
+        content:
+          'Site personnel et portfolio présentant mes projets, expériences et articles de blog',
       },
       { name: 'author', content: 'Xavier Pamphile' },
       { name: 'og:type', content: 'website' },
-      { name: 'og:title', content: 'Xavier Pamphile - Personal Website' },
+      { name: 'og:title', content: 'Xavier Pamphile - Site Personnel' },
       {
         name: 'og:description',
-        content: 'Personal website and portfolio showcasing projects, experiences, and blog posts',
+        content:
+          'Site personnel et portfolio présentant mes projets, expériences et articles de blog',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Xavier Pamphile - Personal Website' },
+      { name: 'twitter:title', content: 'Xavier Pamphile - Site Personnel' },
       {
         name: 'twitter:description',
-        content: 'Personal website and portfolio showcasing projects, experiences, and blog posts',
+        content:
+          'Site personnel et portfolio présentant mes projets, expériences et articles de blog',
       },
     ],
     navbar: {
-      title: 'My Site',
+      title: 'Xavier Pamphile',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Logo du Site',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/',
+          label: 'À propos',
           position: 'left',
-          label: 'Tutorial',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          to: '/experience',
+          label: 'Expérience',
+          position: 'left',
+        },
+        {
+          to: '/contact',
+          label: 'Contact',
+          position: 'left',
+        },
+        { to: '/blog', label: 'Blog', position: 'right' },
+        {
+          href: 'https://github.com/XavierPamphile',
           label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub profile',
+        },
+        {
+          href: 'https://linkedin.com/in/xavier-pamphile',
+          label: 'LinkedIn',
+          position: 'right',
+          className: 'header-linkedin-link',
+          'aria-label': 'LinkedIn profile',
         },
       ],
     },
@@ -165,46 +190,50 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Navigation',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'À propos',
+              to: '/',
+            },
+            {
+              label: 'Expérience',
+              to: '/experience',
+            },
+            {
+              label: 'Contact',
+              to: '/contact',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Réseaux Sociaux',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/xavier-pamphile',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/XavierPamphile',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Plus',
           items: [
             {
               label: 'Blog',
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Mentions Légales',
+              to: '/legal',
             },
           ],
         },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Xavier Pamphile. Tous droits réservés.`,
     },
     prism: {
       theme: prismThemes.github,

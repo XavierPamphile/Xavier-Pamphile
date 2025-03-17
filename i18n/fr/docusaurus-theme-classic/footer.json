@@ -1,0 +1,46 @@
+{
+  "link.title.Navigation": {
+    "message": "Navigation",
+    "description": "The title of the footer links column with title=Navigation"
+  },
+  "link.title.Content": {
+    "message": "Contenu",
+    "description": "The title of the footer links column with title=Content"
+  },
+  "link.title.Connect": {
+    "message": "Connexion",
+    "description": "The title of the footer links column with title=Connect"
+  },
+  "link.item.label.Home": {
+    "message": "Accueil",
+    "description": "The label of footer link with label=Home linking to /"
+  },
+  "link.item.label.Experience": {
+    "message": "Expérience",
+    "description": "The label of footer link with label=Experience linking to /experience"
+  },
+  "link.item.label.Contact": {
+    "message": "Contact",
+    "description": "The label of footer link with label=Contact linking to /contact"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Performance Demo": {
+    "message": "Démo de Performance",
+    "description": "The label of footer link with label=Performance Demo linking to /performance-demo"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/XavierPamphile"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://linkedin.com/in/xavier-pamphile"
+  },
+  "copyright": {
+    "message": "Copyright © {currentYear} Xavier Pamphile. Construit avec Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

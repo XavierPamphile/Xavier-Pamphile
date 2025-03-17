@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import HomepageSocial from '../components/HomepageSocial';
 
 import styles from './index.module.css';
 
@@ -108,6 +109,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageContent />
+        <HomepageSocial />
       </main>
     </Layout>
   );

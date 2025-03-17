@@ -1,0 +1,39 @@
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+  color: var(--ifm-font-color-base);
+}
+
+.socialLink:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .icon {
+  fill: var(--ifm-color-secondary);
+}
+
+.socialLabel {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .socialLinks {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

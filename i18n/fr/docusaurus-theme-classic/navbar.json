@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Xavier Pamphile",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo du Site",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Home": {
+    "message": "Accueil",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Experience": {
+    "message": "Expérience",
+    "description": "Navbar item with label Experience"
+  },
+  "item.label.Contact": {
+    "message": "Contact",
+    "description": "Navbar item with label Contact"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}

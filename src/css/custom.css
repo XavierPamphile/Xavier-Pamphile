@@ -74,6 +74,22 @@
     no-repeat;
 }
 
+/* Hide the text label on desktop, but keep it for screen readers */
+@media screen and (min-width: 997px) {
+  .header-github-link .navbar__item-text,
+  .header-linkedin-link .navbar__item-text {
+    display: none;
+  }
+}
+
+/* Social links in the footer */
+.footer__link-item svg {
+  display: inline-block;
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
 /* Accessibility improvements */
 :focus-visible {
   outline: 2px solid var(--ifm-color-primary);

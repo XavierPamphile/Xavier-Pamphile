@@ -1,0 +1,162 @@
+.experienceHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.experienceSection,
+.educationSection,
+.certificationsSection {
+  margin-bottom: 4rem;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experienceItem {
+  background-color: var(--ifm-color-emphasis-0);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experienceHeader {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 1.5rem;
+}
+
+.experienceTitle {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.experienceCompany {
+  font-weight: bold;
+  margin: 0.5rem 0 0;
+}
+
+.experiencePeriod {
+  margin: 0.25rem 0 0;
+  font-style: italic;
+}
+
+.experienceContent {
+  padding: 1.5rem;
+}
+
+.experienceDescription {
+  margin-bottom: 1.5rem;
+}
+
+.experienceDescription li {
+  margin-bottom: 0.5rem;
+}
+
+.experienceTechnologies h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.875rem;
+}
+
+.educationItem {
+  background-color: var(--ifm-color-emphasis-0);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.educationDegree {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+.educationSchool {
+  font-weight: bold;
+  margin: 0;
+}
+
+.educationPeriod {
+  font-style: italic;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.certificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.certificationItem {
+  background-color: var(--ifm-color-emphasis-0);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.certificationItem:hover {
+  transform: translateY(-5px);
+}
+
+.certificationTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.certificationIssuer {
+  font-weight: bold;
+  margin: 0;
+}
+
+.certificationDate {
+  font-style: italic;
+  margin: 0.25rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .certificationsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "homepage.social.title": {
+    "message": "Connectez-vous avec moi",
+    "description": "Title for the social links section on the homepage"
+  },
+  "homepage.social.description": {
+    "message": "Suivez-moi sur les réseaux sociaux pour rester informé de mes derniers projets et articles.",
+    "description": "Description for the social links section on the homepage"
+  },
+  "theme.navbar.languageDropdown.ariaLabel": {
+    "message": "Sélectionner la langue",
+    "description": "Aria label for the language dropdown"
+  },
+  "title": {
+    "message": "Xavier Pamphile",
+    "description": "The title of the website"
+  },
+  "tagline": {
+    "message": "Développeur Logiciel & Passionné de Technologie",
+    "description": "The tagline of the website"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Cette page a planté.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Page introuvable",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Nous n'avons pas trouvé ce que vous cherchez.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Veuillez contacter le propriétaire du site qui vous a lié à l'URL d'origine et leur faire savoir que leur lien est cassé.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Retour en haut",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archive",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigation récente des articles du blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Lire plus",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "En savoir plus sur {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Accueil",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  }
+}

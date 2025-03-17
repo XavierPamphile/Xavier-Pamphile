@@ -20,6 +20,18 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+        label: 'English',
+        direction: 'ltr',
+      },
+      fr: {
+        htmlLang: 'fr-FR',
+        label: 'Français',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -85,6 +97,10 @@ const config: Config = {
           position: 'right',
         },
         {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/XavierPamphile',
           position: 'right',
           className: 'header-github-link',
@@ -95,10 +111,6 @@ const config: Config = {
           position: 'right',
           className: 'header-linkedin-link',
           'aria-label': 'LinkedIn profile',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
         },
       ],
     },

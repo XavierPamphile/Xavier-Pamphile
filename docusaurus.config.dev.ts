@@ -5,7 +5,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 // Development configuration
 const config: Config = {
   title: 'Xavier Pamphile',
-  tagline: 'Professional Portfolio',
+  tagline: 'Développeur Web & Passionné de Technologie',
   favicon: 'img/favicon.ico',
 
   url: 'http://localhost',
@@ -18,8 +18,15 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
+    localeConfigs: {
+      fr: {
+        htmlLang: 'fr-FR',
+        label: 'Français',
+        direction: 'ltr',
+      },
+    },
   },
 
   presets: [
@@ -46,8 +53,9 @@ const config: Config = {
   themeConfig: {
     // Development-specific theme settings
     metadata: [
-      { name: 'keywords', content: 'portfolio, professional, developer' },
+      { name: 'keywords', content: 'portfolio, développeur, site personnel, blog' },
       { name: 'author', content: 'Xavier Pamphile' },
+      { name: 'description', content: 'Site personnel et portfolio de Xavier Pamphile' },
     ],
     colorMode: {
       defaultMode: 'light',
@@ -62,13 +70,13 @@ const config: Config = {
         // Left side
         {
           to: '/',
-          label: 'Home',
+          label: 'À propos',
           position: 'left',
           activeBaseRegex: '^/$',
         },
         {
           to: '/experience',
-          label: 'Experience',
+          label: 'Expérience',
           position: 'left',
         },
         {
@@ -94,60 +102,52 @@ const config: Config = {
           className: 'header-linkedin-link',
           'aria-label': 'LinkedIn profile',
         },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Content',
+          title: 'Navigation',
           items: [
             {
-              label: 'Home',
+              label: 'À propos',
               to: '/',
             },
             {
-              label: 'Experience',
+              label: 'Expérience',
               to: '/experience',
             },
+            {
+              label: 'Contact',
+              to: '/contact',
+            },
+          ],
+        },
+        {
+          title: 'Réseaux Sociaux',
+          items: [
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/xavier-pamphile',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/XavierPamphile',
+            },
+          ],
+        },
+        {
+          title: 'Plus',
+          items: [
             {
               label: 'Blog',
               to: '/blog',
             },
           ],
         },
-        {
-          title: 'Connect',
-          items: [
-            {
-              label: 'Contact',
-              to: '/contact',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/XavierPamphile',
-            },
-            {
-              label: 'LinkedIn',
-              href: 'https://linkedin.com/in/xavier-pamphile',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'RSS',
-              to: '/blog/rss.xml',
-            },
-          ],
-        },
       ],
-      copyright: `Copyright ${new Date().getFullYear()} Xavier Pamphile. Built with Docusaurus.`,
+      copyright: `Copyright ${new Date().getFullYear()} Xavier Pamphile. Tous droits réservés.`,
     },
   } satisfies Preset.ThemeConfig,
 };
