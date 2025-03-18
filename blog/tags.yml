@@ -32,3 +32,13 @@ tutorial:
   label: Tutorials
   permalink: /tags/tutorial
   description: Step-by-step guides and educational content.
+
+carrière:
+  label: Carrière
+  permalink: /tags/carriere
+  description: Développement professionnel, conseils de carrière et perspectives de l'industrie.
+
+tutoriel:
+  label: Tutoriels
+  permalink: /tags/tutoriel
+  description: Guides étape par étape et contenu éducatif.

@@ -33,9 +33,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-        },
+        docs: false, // Désactivation du plugin docs
         blog: {
           showReadingTime: true,
           feedOptions: {

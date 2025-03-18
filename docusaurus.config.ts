@@ -64,13 +64,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/XavierPamphile/personal-website/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false, // Désactivation du plugin docs
         blog: {
           showReadingTime: true,
           feedOptions: {
